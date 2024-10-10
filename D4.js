@@ -92,15 +92,19 @@ console.log(epify(""));
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
- function check3and7(num) {
+function check3and7(num) {
   if (num <= 0) {
     return "Numero deve essere positivo";
-  } if (num % 3 === 0 || num % 7 === 0) {}
-    else {
-        return true;
-    } else {
-        return false;}
-    }
+  }
+  if (num % 3 === 0 || num % 7 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check3and7(9));
+console.log(check3and7(14));
+console.log(check3and7(10));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
